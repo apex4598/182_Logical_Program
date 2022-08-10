@@ -94,8 +94,10 @@ public class LogicalProgram {
         System.out.println("Prime Number Program");
         logicalProgram.primeNumber();
         System.out.println("Reverse Number Program");
-        logicalProgram.stopWatch();
+        logicalProgram.reverseNumber();
         System.out.println("Stop Watch Program");
+        logicalProgram.stopWatch();
+
 
     }
 }
