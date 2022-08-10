@@ -62,6 +62,21 @@ public class LogicalProgram {
 
     }
 
+    public void reverseNumber(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please Enter any Number: ");
+        int num = sc.nextInt();
+        int rev=0,rem=0;
+        while(num != 0)
+        {
+            rem=num%10;//taking remainder
+            rev=rev*10+rem;
+            num=num/10;
+        }
+        System.out.println("Reverse Number is " + rev);
+    }
+
+
     public static void main(String[] args) {
         System.out.println("Logical Program");
         LogicalProgram logicalProgram = new LogicalProgram();
@@ -71,5 +86,6 @@ public class LogicalProgram {
         logicalProgram.fiboncciSeries();
         System.out.println("Prime Number Program");
         logicalProgram.primeNumber();
+        System.out.println("Reverse Number Program");
     }
 }
