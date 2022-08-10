@@ -37,6 +37,30 @@ public class LogicalProgram {
             n2 = n3;
         }
     }
+    public void primeNumber(){
+        int temp;
+        boolean isPrime=true;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter any number:");
+       
+        int num=scan.nextInt();
+        //number is not divisible by more than its half
+        for(int i=2;i<=num/2;i++)
+        {
+            temp=num%i;//divisible by i then not prime
+            if(temp==0)
+            {
+                isPrime=false;
+                break;
+            }
+        }
+
+        if(isPrime)
+            System.out.println(num + " is a Prime Number");
+        else
+            System.out.println(num + " is not a Prime Number");
+
+    }
 
     public static void main(String[] args) {
         System.out.println("Logical Program");
@@ -45,6 +69,7 @@ public class LogicalProgram {
         logicalProgram.couponNumber();
         System.out.println("Fibonacci Series  Program");
         logicalProgram.fiboncciSeries();
-
+        System.out.println("Prime Number Program");
+        logicalProgram.primeNumber();
     }
 }
