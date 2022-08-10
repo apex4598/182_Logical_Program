@@ -75,7 +75,14 @@ public class LogicalProgram {
         }
         System.out.println("Reverse Number is " + rev);
     }
-
+    public void stopWatch(){
+        long start = System.nanoTime();
+        System.out.println(" Starting Time  "+start);
+        long finish = System.nanoTime();
+        System.out.println(" Finish Time  "+finish);
+        long timeElapsed = finish - start;
+        System.out.println(" Time Elapsed between start and finish "+timeElapsed);
+}
 
     public static void main(String[] args) {
         System.out.println("Logical Program");
@@ -87,5 +94,8 @@ public class LogicalProgram {
         System.out.println("Prime Number Program");
         logicalProgram.primeNumber();
         System.out.println("Reverse Number Program");
+        logicalProgram.stopWatch();
+        System.out.println("Stop Watch Program");
+
     }
 }
