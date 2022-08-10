@@ -16,6 +16,7 @@ public class Binary {
         System.out.println();
     }
     public static void main(String[] args) {
+        System.out.println("Enter Number :");
         Scanner s = new Scanner(System.in);
         int number = s.nextInt();
         toBinary(number);
